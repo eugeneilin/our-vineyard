@@ -35,6 +35,8 @@
       td.callout table.callout_2 td { padding: 0px 20px 0px 60px !important; background: url(images/icon_bottle.gif) no-repeat 10px -3px; }
       td.callout table.callout_3 td { padding: 0px 30px 0px 60px !important; background: url(images/icon_basket.gif) no-repeat 0px -13px; clear: left; }
       td.callout table.callout_4 td { padding: 0px 20px 0px 60px !important; background: url(images/icon_camera.gif) no-repeat 10px -23px; }
+      video { width: 416px !important; height: 312px !important; }
+      video img { width: 416px !important; height: 312px !important; }
     }
 
     @media only screen and (max-width: 510px) {
@@ -44,7 +46,6 @@
       td.headline h1 { font-size: 24px !important; text-align: center; }
       td.banner { height: 115px; background: url(images/banner_small.jpg) no-repeat right 0px; }
       td.content { line-height: 20px !important; padding-bottom: 10px !important; background: #f5f2e5 url(images/banner_small_ghost.jpg) no-repeat right 0px !important; }
-      td.footer { padding: 20px 30px !important; }
       td.promos table.promo_1 { width: 100% !important; border-top: 1px solid #71a412; }
       td.promos table.promo_1 td { background: url(images/promo_1_small.jpg) no-repeat 0px 40px; padding: 20px 0px 40px 110px; }
       td.promos table.promo_2 { width: 100% !important; }
@@ -52,12 +53,15 @@
       td.callout { padding: 20px 30px 0px 30px !important; }
       td.callout table { width: 100% !important; margin-bottom: 20px; }
       td.callout table td { padding: 0px 0px 10px 50px !important; background-size: 50px 50px !important; min-height: 60px; }
+      td.callout table br.spacer { display: inline; }
       td.callout table a { display: inline; }
       td.callout table.callout_1 td { background-position: 0px -6px; }
       td.callout table.callout_2 td { background-position: 4px -2px; }
       td.callout table.callout_3 td { background-position: 0px -7px; }
       td.callout table.callout_4 td { background-position: 4px -17px; }
-      td.callout table br.spacer { display: inline; }
+      td.footer { padding: 20px 30px !important; }
+      video { width: 300px !important; height: 255px !important; }
+      video img { width: 300px !important; height: 255px !important; }
     }
   
     </style>
@@ -188,14 +192,10 @@
 
             <!-- Promos -->
             <tr>
-              <td
-                valign="top"
-                bgcolor="#f5f2e5"
-                class="promos"
-                style="padding: 10px 30px 25px 30px; border-right:1px solid #dbc064; border-left:1px solid #dbc064; background-color: #f5f2e5; font-family: Arial, Helvetica, sans-serif;"
+              <td valign="top" bgcolor="#f5f2e5" class="promos" style="padding: 10px 30px 25px 30px; border-right:1px solid #dbc064; border-left:1px solid #dbc064; background-color: #f5f2e5; font-family: Arial, Helvetica, sans-serif;"
               >
-                <!-- promo 1 -->
-                <table class="promo_1" width="270" align="left">
+              <!-- promo 1 -->
+              <!-- <table class="promo_1" width="270" align="left">
                   <tr>
                     <td>
                       <img
@@ -214,10 +214,10 @@
                       >
                     </td>
                   </tr>
-                </table>
+                </table> -->
 
                 <!-- promo 2 -->
-                <table class="promo_2" width="270" align="right">
+                <!-- <table class="promo_2" width="270" align="right">
                   <tr>
                     <td>
                       <img
@@ -236,7 +236,15 @@
                       >
                     </td>
                   </tr>
-                </table>
+                </table> -->
+            
+                <!-- Video -->
+                <video width="750" height="428" poster="video/our_vineyard.jpg" controls="controls">
+                  <source src="video//our_vineyard.mp4" type="video/mp4">
+                  <a href="http://yoursite.com/video.html">
+                    <img src="video/our_vineyard.jpg">
+                  </a>
+                </video>
               </td>
             </tr>
 
